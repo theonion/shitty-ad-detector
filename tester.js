@@ -24,6 +24,7 @@ function onResourceRequested(requestData, request) {
       break;
     }
   }
+  funky |= requestData.url.search('.nl/') != -1;
   if (funky){
     console.log(requestData.url);
   }
